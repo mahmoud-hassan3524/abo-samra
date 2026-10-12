@@ -103,7 +103,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="pt-24 sm:pt-28 pb-14 min-h-screen">
+  <div class="pt-32 sm:pt-36 lg:pt-40 xl:pt-44 pb-14 min-h-screen">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Top Navigation & Breadcrumbs -->

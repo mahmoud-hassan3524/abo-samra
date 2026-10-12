@@ -17,19 +17,17 @@ const handleAddOffer = (offer) => {
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Section Header -->
-      <div class="flex flex-col md:flex-row items-start md:items-end justify-between mb-5 sm:mb-6 gap-3">
-        <div class="text-right">
-          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-red-100 dark:bg-red-950/60 text-red-600 dark:text-red-400 text-xs font-black mb-2">
-            <Flame class="w-3.5 h-3.5 animate-pulse" />
-            <span>عروض التوفير لفترة محدودة</span>
-          </div>
-          <h2 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">
-            عروض <span class="text-brand-600">أبو سمرة</span> الحصرية
-          </h2>
-          <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">
-            أقوى ميكسات الشاورما والمشويات بأوفر سعر في مصر
-          </p>
+      <div class="text-center max-w-2xl mx-auto mb-6 sm:mb-8">
+        <div class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-red-100 dark:bg-red-950/60 text-red-600 dark:text-red-400 text-xs font-black mb-2.5">
+          <Flame class="w-3.5 h-3.5 animate-pulse" />
+          <span>عروض التوفير لفترة محدودة</span>
         </div>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight">
+          عروض <span class="text-brand-600">أبو سمرة</span> الحصرية
+        </h2>
+        <p class="text-sm text-slate-500 dark:text-slate-400 mt-2 font-medium">
+          أقوى ميكسات الشاورما والمشويات بأوفر سعر في مصر
+        </p>
       </div>
 
       <!-- Offers Grid -->

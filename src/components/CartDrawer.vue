@@ -430,25 +430,16 @@ const resetOrderSuccess = () => {
       <!-- Drawer Footer Action Buttons -->
       <div 
         v-if="cartItems.length > 0 && !orderSubmitted"
-        class="p-4 sm:p-5 border-t border-slate-200 dark:border-dark-border bg-white dark:bg-dark-card space-y-2.5"
+        class="p-4 sm:p-5 border-t border-slate-200 dark:border-dark-border bg-white dark:bg-dark-card"
       >
-        <!-- WhatsApp Direct Checkout Button -->
-        <button
-          @click="handleWhatsAppCheckout"
-          class="w-full flex items-center justify-center gap-2 py-3.5 px-4 rounded-2xl bg-emerald-600 hover:bg-emerald-700 active:scale-98 text-white font-black text-sm shadow-lg shadow-emerald-600/25 transition"
-        >
-          <MessageCircle class="w-5 h-5" />
-          <span>إرسال الطلب عبر واتساب ({{ grandTotal }} ج.م)</span>
-        </button>
-
-        <!-- Simulated Direct Order Placement -->
+        <!-- Primary Direct Online Order Placement -->
         <button
           @click="handleSimulatedCheckout"
           :disabled="isSubmitting"
-          class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-gradient-to-r from-brand-600 to-orange-500 hover:from-brand-700 hover:to-orange-600 active:scale-98 text-white font-bold text-xs shadow-md shadow-brand-500/20 transition"
+          class="w-full flex items-center justify-center gap-2 py-3.5 px-4 rounded-2xl bg-gradient-to-r from-brand-600 to-orange-500 hover:from-brand-700 hover:to-orange-600 active:scale-98 text-white font-black text-sm sm:text-base shadow-lg shadow-brand-500/25 transition disabled:opacity-50"
         >
-          <Sparkles class="w-4 h-4" />
-          <span v-if="!isSubmitting">تأكيد الطلب الفوري أونلاين</span>
+          <Sparkles class="w-5 h-5" />
+          <span v-if="!isSubmitting">تأكيد الطلب الفوري أونلاين ({{ grandTotal }} ج.م)</span>
           <span v-else>جاري تسجيل الطلب...</span>
         </button>
       </div>

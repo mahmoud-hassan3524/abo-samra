@@ -20,7 +20,7 @@ const scrollToSection = (id) => {
 </script>
 
 <template>
-  <section id="hero" class="relative pt-24 sm:pt-28 pb-8 sm:pb-12 overflow-hidden">
+  <section id="hero" class="relative pt-32 sm:pt-36 lg:pt-40 xl:pt-44 pb-8 sm:pb-12 overflow-hidden">
     <!-- Ambient Culinary Background Glows -->
     <div class="absolute top-1/4 -right-28 w-96 h-96 bg-brand-500/15 rounded-full blur-3xl pointer-events-none"></div>
     <div class="absolute bottom-10 -left-28 w-96 h-96 bg-amber-500/15 rounded-full blur-3xl pointer-events-none"></div>
